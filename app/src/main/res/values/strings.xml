@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AndroidTutorial</string>
+    <string name="greating">Wellcome to Android !</string>
+    <string name="searchFieldText">Enter search input!</string>
+    <string name="messageActivity">Message Activity</string>
 </resources>
