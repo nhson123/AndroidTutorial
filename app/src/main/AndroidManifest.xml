@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--  main Activity containts the laucher -->
+
+        <!-- main Activity containts the laucher -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,25 +19,35 @@
             </intent-filter>
         </activity>
 
-
-
-        <!--  android:parentActivityName = return to root by Navigation -->
-        <activity android:name=".MessageActivity"
-            android:parentActivityName=".MainActivity"
-            >
-        <meta-data
-            android:name="android:support.PARENT_ACTIVITY"
-            android:value=".MainActivity"
-         />
-        </activity>
-        <activity android:name=".FinalActivity"
-            android:parentActivityName=".MainActivity"
-            >
+        <!-- android:parentActivityName = return to root by Navigation -->
+        <activity
+            android:name=".activities.MessageActivity"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"
-                android:value=".MainActivity"
-                />
+                android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name=".activities.FinalActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".fragments.Fragments"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".fragments.FragmentsDynamic"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>

@@ -6,6 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.nhs.androidtutorial.activities.MessageActivity;
+import com.nhs.androidtutorial.fragments.Fragments;
+import com.nhs.androidtutorial.fragments.FragmentsDynamic;
+
+/**
+ * Tutorial location https://www.youtube.com/playlist?list=PLshdtb5UWjSrOJfpFOE-u55s3SnY2EO9v
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.mainEditText1);
         Intent intent = new Intent(this, MessageActivity.class);
         intent.putExtra("MESSAGE",editText.getText().toString());
+        startActivity(intent);
+    }
+
+    public void openFragments(View view) {
+        Intent intent = new Intent(this, Fragments.class);
+        startActivity(intent);
+    }
+
+    public void openDynFragment(View view) {
+        Intent intent = new Intent(this, FragmentsDynamic.class);
         startActivity(intent);
     }
 }

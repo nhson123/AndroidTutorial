@@ -1,7 +1,9 @@
-package com.nhs.androidtutorial;
+package com.nhs.androidtutorial.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.nhs.androidtutorial.R;
 
 public class FinalActivity extends AppCompatActivity {
 

@@ -3,6 +3,18 @@
     <string name="greating">Wellcome to Android !</string>
     <string name="searchFieldText">Enter search input!</string>
     <string name="messageActivity">Message Activity</string>
-    <string name="finalActivityMessage">Wellcome to Final Activity</string>
+    <string name="finalActivityMessage">Welcome to Final Activity</string>
     <string name="finalButtonText">Final Activity</string>
+    <string name="fragmentActivit">Fragment</string>
+    <string name="vertivalFragmentLabel">Fragement potrait</string>
+    <string name="articleFragmentLabel">Article Fragment</string>
+    <string name="headFragment">Head line Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dynFragmentLabel">Dyn. Fragment</string>
+    <string name="homeFragmentLabel">Home Fragment</string>
+    <string name="homSecFragmentLabel">Home second Fragment</string>
+    <string name="homeThirdFragmentLabel">Home third Fragment</string>
+
 </resources>
