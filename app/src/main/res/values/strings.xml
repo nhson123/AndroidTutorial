@@ -10,11 +10,18 @@
     <string name="articleFragmentLabel">Article Fragment</string>
     <string name="headFragment">Head line Fragment</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dynFragmentLabel">Dyn. Fragment</string>
     <string name="homeFragmentLabel">Home Fragment</string>
     <string name="homSecFragmentLabel">Home second Fragment</string>
     <string name="homeThirdFragmentLabel">Home third Fragment</string>
+    <!--Preference-->
+    <string name="login_preference">AndroidTutorial_login_preference</string>
+    <string name="login_status_preference">AndroidTutorial_login_status_preference</string>
+    <string name="preferenceLabelText">PreferenceAPI</string>
+    <string name="loginLabelText">Login</string>
+    <string name="user_name">son</string>
+    <string name="user_pwd">son</string>
+    <string name="logOutText">Logout</string>
 
 </resources>

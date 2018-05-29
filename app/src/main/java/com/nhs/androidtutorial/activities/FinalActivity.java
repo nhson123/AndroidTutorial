@@ -1,5 +1,6 @@
 package com.nhs.androidtutorial.activities;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
