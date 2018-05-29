@@ -48,13 +48,21 @@
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".preferencesAPI.PreferenceAPI"
+        <activity
+            android:name=".preferencesAPI.PreferenceAPI"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-            </activity >
-        <activity android:name=".preferencesAPI.LoggedActivity"
+        </activity>
+        <activity
+            android:name=".preferencesAPI.LoggedActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".sqlLite.SqlLiteActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"

@@ -10,6 +10,7 @@ import com.nhs.androidtutorial.activities.MessageActivity;
 import com.nhs.androidtutorial.fragments.Fragments;
 import com.nhs.androidtutorial.fragments.FragmentsDynamic;
 import com.nhs.androidtutorial.preferencesAPI.PreferenceAPI;
+import com.nhs.androidtutorial.sqlLite.SqlLiteActivity;
 
 /**
  * Tutorial location https://www.youtube.com/playlist?list=PLshdtb5UWjSrOJfpFOE-u55s3SnY2EO9v
@@ -44,4 +45,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PreferenceAPI.class);
         startActivity(intent);
 }
+
+    public void openSQLLite(View view) {
+        Intent intent = new Intent(this, SqlLiteActivity.class);
+        startActivity(intent);
+    }
 }

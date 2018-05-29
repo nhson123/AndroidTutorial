@@ -23,7 +23,7 @@ public class PreferenceAPI extends AppCompatActivity {
         username = findViewById(R.id.loginUsername);
         password = findViewById(R.id.loginPwd);
 
-        //check if logged
+        //check if already logged
         if(preferenceConfig.readLoginStatus()){
             startActivity(new Intent(this, LoggedActivity.class));
             finish();

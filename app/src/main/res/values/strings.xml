@@ -23,5 +23,10 @@
     <string name="user_name">son</string>
     <string name="user_pwd">son</string>
     <string name="logOutText">Logout</string>
+    <string name="sqlLiteLabel">SQLLite</string>
+    <string name="addContactText">Add Contact</string>
+    <string name="viewContact">View Contact</string>
+    <string name="updateContact">Update Contact</string>
+    <string name="deleteContact">Delete Contact</string>
 
 </resources>
