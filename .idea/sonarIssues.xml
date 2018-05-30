@@ -118,7 +118,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/nhs/androidtutorial/sqlLite/AddNewContactFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/nhs/androidtutorial/sqlLite/ContactContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/nhs/androidtutorial/sqlLite/ContactContractFragment.java">
           <value>
             <set />
           </value>
@@ -174,6 +184,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_sql_lite.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_new_contact.xml">
           <value>
             <set />
           </value>

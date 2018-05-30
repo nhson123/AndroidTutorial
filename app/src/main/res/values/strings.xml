@@ -28,5 +28,6 @@
     <string name="viewContact">View Contact</string>
     <string name="updateContact">Update Contact</string>
     <string name="deleteContact">Delete Contact</string>
+    <string name="addNewContactText">Add new contact</string>
 
 </resources>
