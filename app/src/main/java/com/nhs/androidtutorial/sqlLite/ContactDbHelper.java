@@ -2,6 +2,7 @@ package com.nhs.androidtutorial.sqlLite;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -46,5 +47,13 @@ public class ContactDbHelper extends SQLiteOpenHelper {
         //add row if not null
         database.insert(ContactContract.ContactEntry.TABLE_NAME, null, contentValues);
         Log.d("Database Operation", "a row is inserted");
+    }
+    public Cursor readContacts(SQLiteDatabase database){
+        String[]  projections = {ContactContract.ContactEntry.CONTRACT_ID,
+        ContactContract.ContactEntry.CONTRACT_NAME, ContactContract.ContactEntry.CONTRACT_EMAIL};
+
+        Cursor cursor = database.query(ContactContract.ContactEntry.TABLE_NAME, projections, null, null, null, null, null);
+        return cursor;
+
     }
 }

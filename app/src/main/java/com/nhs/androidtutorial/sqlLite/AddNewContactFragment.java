@@ -50,7 +50,7 @@ public class AddNewContactFragment extends Fragment {
                 contactId.setText("");
                 contactName.setText("");
                 contactEmail.setText("");
-                Toast.makeText(getActivity(),"Contact added..",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Contact added..", Toast.LENGTH_SHORT).show();
             }
         });
 

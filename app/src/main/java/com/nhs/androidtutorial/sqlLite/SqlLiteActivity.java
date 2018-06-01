@@ -22,11 +22,15 @@ public class SqlLiteActivity extends AppCompatActivity implements DBHomeFragment
         }
     }
 
+    //Replace the Fragments in SQLiteHome
     @Override
     public void dbOpPerformed(int method) {
         switch (method) {
             case 3:
                 getSupportFragmentManager().beginTransaction().replace(R.id.dbHomeFragment, new EditContactFragment()).addToBackStack(null).commit();
+                break;
+            case 2:
+                getSupportFragmentManager().beginTransaction().replace(R.id.dbHomeFragment, new ViewContactsFragment()).addToBackStack(null).commit();
                 break;
             case 1:
                 getSupportFragmentManager().beginTransaction().replace(R.id.dbHomeFragment, new AddNewContactFragment()).addToBackStack(null).commit();

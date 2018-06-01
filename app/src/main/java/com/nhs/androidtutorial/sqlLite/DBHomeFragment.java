@@ -42,6 +42,10 @@ public class DBHomeFragment extends Fragment implements View.OnClickListener {
         addButton = view.findViewById(R.id.addContactButton);
         addButton.setOnClickListener(this);
 
+        viewButton = view.findViewById(R.id.viewContactsButton);
+        viewButton.setOnClickListener(this);
+
+
         return view;
     }
 
@@ -54,6 +58,10 @@ public class DBHomeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.addContactButton:
                 onDbOpListener.dbOpPerformed(1);
+                break;
+
+            case R.id.viewContactsButton:
+                onDbOpListener.dbOpPerformed(2);
                 break;
         }
 
