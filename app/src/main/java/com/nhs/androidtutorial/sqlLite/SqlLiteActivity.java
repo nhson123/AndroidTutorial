@@ -26,6 +26,10 @@ public class SqlLiteActivity extends AppCompatActivity implements DBHomeFragment
     @Override
     public void dbOpPerformed(int method) {
         switch (method) {
+            case 4:
+                getSupportFragmentManager().beginTransaction().replace(R.id.dbHomeFragment, new DeleteContactFragment()).addToBackStack(null).commit();
+                break;
+
             case 3:
                 getSupportFragmentManager().beginTransaction().replace(R.id.dbHomeFragment, new EditContactFragment()).addToBackStack(null).commit();
                 break;

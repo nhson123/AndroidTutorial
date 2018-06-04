@@ -45,6 +45,8 @@ public class DBHomeFragment extends Fragment implements View.OnClickListener {
         viewButton = view.findViewById(R.id.viewContactsButton);
         viewButton.setOnClickListener(this);
 
+        deleteButton = view.findViewById(R.id.deleteContactButton);
+        deleteButton.setOnClickListener(this);
 
         return view;
     }
@@ -52,6 +54,10 @@ public class DBHomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
+            case R.id.deleteContactButton:
+                onDbOpListener.dbOpPerformed(4);
+                break;
+
             case R.id.updateContactButton:
                 onDbOpListener.dbOpPerformed(3);
                 break;
@@ -63,6 +69,7 @@ public class DBHomeFragment extends Fragment implements View.OnClickListener {
             case R.id.viewContactsButton:
                 onDbOpListener.dbOpPerformed(2);
                 break;
+
         }
 
     }

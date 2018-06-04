@@ -29,5 +29,6 @@
     <string name="updateContact">Update Contact</string>
     <string name="deleteContact">Delete Contact</string>
     <string name="addNewContactText">Add new contact</string>
+    <string name="roomDBText">RoomDB</string>
 
 </resources>

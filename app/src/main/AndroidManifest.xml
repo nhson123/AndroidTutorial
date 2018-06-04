@@ -62,12 +62,14 @@
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".sqlLite.SqlLiteActivity"
+        <activity
+            android:name=".sqlLite.SqlLiteActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity android:name=".roomDB.RoomDBActivity"></activity>
     </application>
 
 </manifest>
