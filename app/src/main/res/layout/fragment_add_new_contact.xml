@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/updateContactIdField"
+        android:id="@+id/updateUserIdField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/addNewContactLabel" />
 
     <EditText
-        android:id="@+id/updateContacNameField"
+        android:id="@+id/addUserNameField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -57,10 +57,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateContactIdField" />
+        app:layout_constraintTop_toBottomOf="@+id/updateUserIdField" />
 
     <EditText
-        android:id="@+id/updateContactEmailField"
+        android:id="@+id/addUserEmailField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateContacNameField" />
+        app:layout_constraintTop_toBottomOf="@+id/addUserNameField" />
 
     <Button
         android:id="@+id/addNewContactButton"
@@ -89,5 +89,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.706"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateContactEmailField" />
+        app:layout_constraintTop_toBottomOf="@+id/addUserEmailField" />
 </android.support.constraint.ConstraintLayout>
