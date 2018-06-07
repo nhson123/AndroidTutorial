@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/addNewContactLabel"
+        android:id="@+id/addContactLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/updateUserIdField"
+        android:id="@+id/addContacIdField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -40,10 +40,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addNewContactLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/addContactLabel" />
 
     <EditText
-        android:id="@+id/addUserNameField"
+        android:id="@+id/addContactNameField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -57,10 +57,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateUserIdField" />
+        app:layout_constraintTop_toBottomOf="@+id/addContacIdField" />
 
     <EditText
-        android:id="@+id/addUserEmailField"
+        android:id="@+id/addContactEmailField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addUserNameField" />
+        app:layout_constraintTop_toBottomOf="@+id/addContactNameField" />
 
     <Button
         android:id="@+id/addNewContactButton"
@@ -89,5 +89,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.706"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addUserEmailField" />
+        app:layout_constraintTop_toBottomOf="@+id/addContactEmailField" />
 </android.support.constraint.ConstraintLayout>

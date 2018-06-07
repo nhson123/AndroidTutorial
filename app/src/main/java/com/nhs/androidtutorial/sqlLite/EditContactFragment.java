@@ -34,9 +34,9 @@ public class EditContactFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_edit_contact, container, false);
-        update_id = view.findViewById(R.id.updateUserIdField);
-        update_name = view.findViewById(R.id.addUserNameField);
-        update_email = view.findViewById(R.id.addUserEmailField);
+        update_id = view.findViewById(R.id.addContacIdField);
+        update_name = view.findViewById(R.id.addContactNameField);
+        update_email = view.findViewById(R.id.addContactEmailField);
         updateButton = view.findViewById(R.id.updateContactButton);
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -30,5 +30,10 @@
     <string name="deleteContact">Delete Contact</string>
     <string name="addNewContactText">Add new contact</string>
     <string name="roomDBText">RoomDB</string>
+    <string name="roomDBLabel">Room DB</string>
+    <string name="addUserButtonText">Add User</string>
+    <string name="viewUserButtonText">View User</string>
+    <string name="updateUserButtonText">Update User</string>
+    <string name="deleteUserButtonText">Delete User</string>
 
 </resources>

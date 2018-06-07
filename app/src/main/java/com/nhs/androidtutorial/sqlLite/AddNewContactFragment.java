@@ -32,9 +32,9 @@ public class AddNewContactFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_new_contact, container, false);
 
-        contactId = view.findViewById(R.id.updateUserIdField);
-        contactName = view.findViewById(R.id.addUserNameField);
-        contactEmail = view.findViewById(R.id.addUserEmailField);
+        contactId = view.findViewById(R.id.addContacIdField);
+        contactName = view.findViewById(R.id.addContactNameField);
+        contactEmail = view.findViewById(R.id.addContactEmailField);
         addButton = view.findViewById(R.id.addNewContactButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
