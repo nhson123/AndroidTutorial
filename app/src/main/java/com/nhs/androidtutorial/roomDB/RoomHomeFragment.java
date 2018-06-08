@@ -14,7 +14,7 @@ import com.nhs.androidtutorial.R;
  * A simple {@link Fragment} subclass.
  */
 public class RoomHomeFragment extends Fragment implements View.OnClickListener {
-    private Button addUser, viewUser, updateUser, deleteUser;
+    private Button addUser, viewUsers, updateUser, deleteUser;
 
     public RoomHomeFragment() {
         // Required empty public constructor
@@ -26,8 +26,19 @@ public class RoomHomeFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_room_home, container, false);
+        //Add User
         addUser = view.findViewById(R.id.addUserButton);
         addUser.setOnClickListener(this);
+
+        // getUser
+        viewUsers = view.findViewById(R.id.viewUserButton);
+        viewUsers.setOnClickListener(this);
+
+        updateUser = view.findViewById(R.id.updateUserButton);
+        updateUser.setOnClickListener(this);
+
+        deleteUser = view.findViewById(R.id.deleteUserButton);
+        deleteUser.setOnClickListener(this);
         return view;
     }
 
@@ -36,6 +47,19 @@ public class RoomHomeFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()){
             case R.id.addUserButton:
                 RoomDBActivity.fragmentManager.beginTransaction().replace(R.id.roomHomeFragment,new AddUserFragment()).addToBackStack(null).commit();
+                break;
+
+            case R.id.viewUserButton:
+                RoomDBActivity.fragmentManager.beginTransaction().replace(R.id.roomHomeFragment,new ViewUsersFragment()).addToBackStack(null).commit();
+                break;
+
+            case R.id.updateUserButton:
+                RoomDBActivity.fragmentManager.beginTransaction().replace(R.id.roomHomeFragment,new UpdateUserFragement()).addToBackStack(null).commit();
+                break;
+
+            case R.id.deleteUserButton:
+                RoomDBActivity.fragmentManager.beginTransaction().replace(R.id.roomHomeFragment,new DeleteUserFragment()).addToBackStack(null).commit();
+                break;
         }
     }
 }

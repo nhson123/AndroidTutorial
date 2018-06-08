@@ -8,7 +8,7 @@ import android.arch.persistence.room.PrimaryKey;
  * Created by Hoang Son Nguyen nhs@gmx.at on ${DATETIME}.
  */
 
-@Entity(tableName = "users")
+@Entity(tableName = "user")
 public class User {
 
     @PrimaryKey

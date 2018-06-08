@@ -16,6 +16,7 @@ import com.nhs.androidtutorial.R;
  * A simple {@link Fragment} subclass.
  */
 public class AddUserFragment extends Fragment {
+
     private EditText userId, userName, userEmail;
     private Button addUserButton;
 

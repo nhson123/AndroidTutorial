@@ -23,7 +23,7 @@ public class RoomDBActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         //RoomDB created
-        myAppDatabase = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"usersDB").allowMainThreadQueries().build();
+        myAppDatabase = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"userDB").allowMainThreadQueries().build();
 
         if(findViewById(R.id.roomHomeFragment) != null){
             if(savedInstanceState != null){
