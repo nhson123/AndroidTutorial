@@ -25,4 +25,7 @@ public interface MyDAO {
 
     @Update
     public void updateUser(User user);
+
+    @Query("select * from user where id = :id LIMIT 1")
+    public User getUserById(int id);
 }
