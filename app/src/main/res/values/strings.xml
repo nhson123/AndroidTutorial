@@ -35,5 +35,13 @@
     <string name="viewUserButtonText">View User</string>
     <string name="updateUserButtonText">Update User</string>
     <string name="deleteUserButtonText">Delete User</string>
+    <string name="recyclerViewText">Recycler View</string>
+
+    <string-array name="countries">
+        <item>Deutschland</item>
+        <item>Österreich</item>
+        <item>Italien</item>
+        <item>Ungarn</item>
+    </string-array>
 
 </resources>

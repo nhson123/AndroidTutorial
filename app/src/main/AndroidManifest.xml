@@ -69,7 +69,8 @@
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".roomDB.RoomDBActivity"></activity>
+        <activity android:name=".roomDB.RoomDBActivity" />
+        <activity android:name=".recyclerView.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>
