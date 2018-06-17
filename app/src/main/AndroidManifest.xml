@@ -70,7 +70,8 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".roomDB.RoomDBActivity" />
-        <activity android:name=".recyclerView.RecyclerViewActivity"></activity>
+        <activity android:name=".recyclerView.RecyclerViewActivity" />
+        <activity android:name=".recyclerView.RecyclerImageViewActivity"></activity>
     </application>
 
 </manifest>

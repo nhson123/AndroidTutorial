@@ -10,6 +10,7 @@ import com.nhs.androidtutorial.activities.MessageActivity;
 import com.nhs.androidtutorial.fragments.Fragments;
 import com.nhs.androidtutorial.fragments.FragmentsDynamic;
 import com.nhs.androidtutorial.preferencesAPI.PreferenceAPI;
+import com.nhs.androidtutorial.recyclerView.RecyclerImageViewActivity;
 import com.nhs.androidtutorial.recyclerView.RecyclerViewActivity;
 import com.nhs.androidtutorial.roomDB.RoomDBActivity;
 import com.nhs.androidtutorial.sqlLite.SqlLiteActivity;
@@ -60,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openRecyclerViewFragment(View view) {
         Intent intent = new Intent(this, RecyclerViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void openRecyclerImageView(View view) {
+        Intent intent = new Intent(this, RecyclerImageViewActivity.class);
         startActivity(intent);
     }
 }

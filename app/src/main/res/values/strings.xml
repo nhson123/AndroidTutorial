@@ -36,12 +36,23 @@
     <string name="updateUserButtonText">Update User</string>
     <string name="deleteUserButtonText">Delete User</string>
     <string name="recyclerViewText">Recycler View</string>
+    <string name="recyclerImageViewLabel">Image Recyler View</string>
 
     <string-array name="countries">
+
         <item>Deutschland</item>
         <item>Österreich</item>
         <item>Italien</item>
         <item>Ungarn</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Croatia</item>
+        <item>Belgium</item>
+        <item>Holland</item>
+        <item>Sweden</item>
+        <item>Norway</item>
+        <item>Finland</item>
+        <item>China</item>
     </string-array>
 
 </resources>

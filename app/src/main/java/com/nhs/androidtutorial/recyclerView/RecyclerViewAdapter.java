@@ -1,16 +1,12 @@
 package com.nhs.androidtutorial.recyclerView;
 
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.TextView;
 
 import com.nhs.androidtutorial.R;
-
-import junit.runner.Version;
 
 import java.util.List;
 
@@ -25,6 +21,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
+    public int getItemViewType(int viewType){
+        return viewType;
+    }
+
+    @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         TextView textView = (TextView) LayoutInflater.from(parent.getContext()).inflate(R.layout.text_view_layout,parent,false);
         MyViewHolder myViewHolder = new MyViewHolder(textView);
@@ -33,7 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.versionName.setText(list.get(position));
+        holder.countryItem.setText(list.get(position));
 
     }
 
@@ -45,10 +46,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         //for every Item
-        TextView versionName;
+        TextView countryItem;
         public MyViewHolder(TextView itemView) {
             super(itemView);
-            versionName = itemView;
+            countryItem = itemView;
         }
     }
-}
+
+    }
+
