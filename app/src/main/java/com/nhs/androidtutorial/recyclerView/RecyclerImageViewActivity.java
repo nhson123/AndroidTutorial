@@ -35,7 +35,7 @@ public class RecyclerImageViewActivity extends AppCompatActivity {
         layoutManager = new GridLayoutManager(this,2); //2 column
         recyclerViewImage.setHasFixedSize(true);
         recyclerViewImage.setLayoutManager(layoutManager);
-        imageAdapter = new RecyclerImageViewAdapter(images);
+        imageAdapter = new RecyclerImageViewAdapter(images,this);
         recyclerViewImage.setAdapter(imageAdapter);
     }
 }

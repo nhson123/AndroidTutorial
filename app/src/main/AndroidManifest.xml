@@ -71,7 +71,8 @@
         </activity>
         <activity android:name=".roomDB.RoomDBActivity" />
         <activity android:name=".recyclerView.RecyclerViewActivity" />
-        <activity android:name=".recyclerView.RecyclerImageViewActivity"></activity>
+        <activity android:name=".recyclerView.RecyclerImageViewActivity" />
+        <activity android:name=".recyclerView.ImageDisplayActivity"></activity>
     </application>
 
 </manifest>
